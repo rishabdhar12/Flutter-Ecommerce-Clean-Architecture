@@ -1,4 +1,4 @@
-import 'package:bloc_ecommerce/features/user/domain/dto/signin_dto.dart';
+import 'package:bloc_ecommerce/core/dto/signin_dto.dart';
 import 'package:bloc_ecommerce/features/user/presentation/bloc/remote/remote_user_bloc.dart';
 import 'package:bloc_ecommerce/features/user/presentation/bloc/remote/remote_user_event.dart';
 import 'package:bloc_ecommerce/features/user/presentation/bloc/remote/remote_user_state.dart';
@@ -33,10 +33,6 @@ class _SignInScreenState extends State<SignInScreen> {
           email: _emailController.text,
           password: _passwordController.text,
         )));
-
-    // Here you can implement your sign-in logic
-    debugPrint('Email: $email');
-    debugPrint('Password: $password');
 
     // For demonstration purposes, just clear the fields
     _emailController.clear();

@@ -17,12 +17,10 @@ class RemoteUserBloc extends Bloc<RemoteUserEvent, RemoteUserState> {
     final dataState = await _signInUsecase(event.params);
 
     if (dataState is DataSuccess) {
-      debugPrint("$dataState");
       emit(RemoteUserDone(dataState.data!));
     }
 
     if (dataState is DataFailure) {
-      debugPrint("${dataState.error}");
       emit(RemoteUserError(dataState.error!));
     }
   }

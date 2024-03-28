@@ -1,4 +1,4 @@
-import 'package:bloc_ecommerce/features/user/domain/dto/signin_dto.dart';
+import 'package:bloc_ecommerce/core/dto/signin_dto.dart';
 
 abstract class RemoteUserEvent {
   const RemoteUserEvent();
